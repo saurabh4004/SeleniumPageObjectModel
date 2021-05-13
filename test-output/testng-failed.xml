@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page_Object_Model]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="am.listeners.CustomListeners"/>
+  </listeners>
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="am.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- am.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Create Account Test(failed)">
+    <classes>
+      <class name="am.testcases.CreateAccountTest">
+        <methods>
+          <include name="createAccountTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- am.testcases.CreateAccountTest -->
+    </classes>
+  </test> <!-- Create Account Test(failed) -->
+</suite> <!-- Failed suite [Page_Object_Model] -->
